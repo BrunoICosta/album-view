@@ -1,0 +1,10 @@
+<mat-card *ngIf="album && firstPhoto" class="mat-elevation-z4">
+  <mat-card-header class="w100">
+    <mat-card-title class="w100">Álbum {{ album.id }}</mat-card-title>
+    <mat-card-subtitle class="w100">{{ album.title }}</mat-card-subtitle>
+  </mat-card-header>
+  <img (click)="openPhotosDialog()" style="cursor: pointer;" mat-card-image [src]="firstPhoto.thumbnailUrl" />
+  <mat-card-actions>
+    <button mat-button (click)="openPhotosDialog()">Ver fotos</button>
+  </mat-card-actions>
+</mat-card>

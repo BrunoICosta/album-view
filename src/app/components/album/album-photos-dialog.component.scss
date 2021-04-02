@@ -1,0 +1,12 @@
+mat-dialog-content {
+  display: block;
+  height: 500px;
+  width: 500px;
+  padding: 2em;
+}
+
+@media only screen and (max-width: 760px) {
+  .dialog-responsive {
+    width: 100%;
+  }
+}
